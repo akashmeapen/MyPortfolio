@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coral">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    
+    <!-- Floating Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-box">AK</span>
+            <span class="logo-text">AKASH.DEV</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#about" class="active">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#resume">RESUME</a>
+        </nav>
+        <div class="nav-actions">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                <i data-lucide="palette"></i>
+            </button>
+            <a href="#contact" class="btn btn-rounded">LET'S TALK <i data-lucide="arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-menu-btn" id="mobile-btn">
+        <i data-lucide="menu"></i>
+    </button>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#about">HOME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-text-block">
+                <h2 class="hero-subtitle">HELLO WORLD, I'M</h2>
+                <h1 class="hero-title">AKASH</h1>
+            </div>
+            
+            <div class="hero-center-box">
+                <!-- Decorative element or image placeholder -->
+                <div class="hero-photo">
+                    <div class="photo-inner">
+                        <i data-lucide="terminal" style="width:100px; height:100px; color:var(--bg)"></i>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">DEV</div>
+                <div class="floating-badge badge-2">CP</div>
+                <div class="floating-badge badge-3">SIH WINNER</div>
+            </div>
+
+            <div class="hero-description">
+                <p>I build <strong>high-performance applications</strong> with brutalist aesthetics and clean code. A minimalist developer who solves complex problems.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">VIEW WORK <i data-lucide="play"></i></a>
+                    <a href="#resume" class="btn btn-outline">RESUME</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Marquee below hero -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>DEVELOPER</span><span class="star">★</span>
+                <span>COMPETITIVE PROGRAMMER</span><span class="star">★</span>
+                <span>SIH WINNER</span><span class="star">★</span>
+                <span>DESIGN ENTHUSIAST</span><span class="star">★</span>
+                <span>DEVELOPER</span><span class="star">★</span>
+                <span>COMPETITIVE PROGRAMMER</span><span class="star">★</span>
+                <span>SIH WINNER</span><span class="star">★</span>
+                <span>DESIGN ENTHUSIAST</span><span class="star">★</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section-pad" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">TECHNICAL ARSENAL</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card color-1">
+                    <div class="skill-icon"><i data-lucide="code-2"></i></div>
+                    <h3>LANGUAGES</h3>
+                    <p>C++, Python, JavaScript, TypeScript, Java</p>
+                    <div class="card-tags">
+                        <span class="tag">FAV: C++</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card color-2">
+                    <div class="skill-icon"><i data-lucide="server"></i></div>
+                    <h3>BACKEND</h3>
+                    <p>Node.js, Express, Django, PostgreSQL, MongoDB</p>
+                    <div class="card-tags">
+                        <span class="tag">FAV: NODE</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card color-3">
+                    <div class="skill-icon"><i data-lucide="cpu"></i></div>
+                    <h3>AI / ML</h3>
+                    <p>TensorFlow, PyTorch, Data Analysis, NLP</p>
+                    <div class="card-tags">
+                        <span class="tag">FAV: PYTORCH</span>
+                    </div>
+                </div>
+
+                <div class="skill-card color-4">
+                    <div class="skill-icon"><i data-lucide="terminal-square"></i></div>
+                    <h3>TOOLS</h3>
+                    <p>Git, Docker, AWS, Linux, VS Code</p>
+                    <div class="card-tags">
+                        <span class="tag">FAV: DOCKER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section-pad" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">FEATURED WORKS</h2>
+            </div>
+
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-visual bg-pattern-1">
+                        <div class="project-box">
+                            <h2>SIH</h2>
+                            <p>SOLUTION</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart India Hackathon</h3>
+                        <p class="mono-text">AI-powered predictive analytics platform to optimize resource allocation using deep learning algorithms.</p>
+                        <div class="tech-stack">
+                            <span class="pill">Python</span>
+                            <span class="pill">TensorFlow</span>
+                            <span class="pill">React</span>
+                            <span class="pill">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary"><i data-lucide="play"></i> LIVE DEMO</a>
+                            <a href="#" class="btn btn-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item reverse">
+                    <div class="project-visual bg-pattern-2">
+                        <div class="project-box">
+                            <h2>ALGO</h2>
+                            <p>TRADE</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Algorithmic Trading Bot</h3>
+                        <p class="mono-text">Low-latency trading system executing custom models on real-time market data with continuous backtesting capabilities.</p>
+                        <div class="tech-stack">
+                            <span class="pill">C++</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary"><i data-lucide="github"></i> SOURCE CODE</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-visual bg-pattern-3">
+                        <div class="project-box">
+                            <h2>CODE</h2>
+                            <p>JUDGE</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CodeJudge - CP Platform</h3>
+                        <p class="mono-text">Scalable remote code execution engine and competitive programming platform with isolated dockerized environments.</p>
+                        <div class="tech-stack">
+                            <span class="pill">Node.js</span>
+                            <span class="pill">Docker</span>
+                            <span class="pill">Redis</span>
+                            <span class="pill">Postgres</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary"><i data-lucide="play"></i> PLATFORM</a>
+                            <a href="#" class="btn btn-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Me / Contact Section -->
+    <section class="find-me section-pad" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>LET'S BUILD SOMETHING AWESOME</h2>
+                    <p class="mono-text">Open for internships, roles, and interesting discussions.</p>
+                </div>
+                
+                <form class="playful-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-row">
+                        <input type="text" placeholder="YOUR NAME" required>
+                        <input type="email" placeholder="YOUR EMAIL" required>
+                    </div>
+                    <textarea placeholder="WHAT'S ON YOUR MIND?" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-block">SEND MESSAGE <i data-lucide="send"></i></button>
+                </form>
+            </div>
+
+            <div class="social-banner" id="resume">
+                <div class="social-text">
+                    <h2>YOU CAN FIND ME HERE:</h2>
+                </div>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn sb-github"><i data-lucide="github"></i></a>
+                    <a href="#" class="social-btn sb-linkedin"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-btn sb-twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="social-btn sb-mail"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+
+            <div class="resume-banner">
+                <div class="resume-text">
+                    <h3>GRAB MY RESUME</h3>
+                    <p class="mono-text">A detailed overview of my experience, education, and technical background.</p>
+                </div>
+                <a href="#" class="btn btn-primary large"><i data-lucide="download"></i> DOWNLOAD PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">AKASH.DEV</div>
+            <div class="footer-copy mono-text">
+                &copy; 2026. DESIGNED WITH BRUTALISM & COFFEE.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
