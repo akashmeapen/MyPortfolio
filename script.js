@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileLinks = mobileNav.querySelectorAll('a');
 
     // Themes array to cycle through
-    const themes = ['coral', 'acid', 'dark'];
+    const themes = ['coral', 'acid', 'dark','milesmorales'];
     let currentThemeIndex = 0;
 
     // Check LocalStorage for theme

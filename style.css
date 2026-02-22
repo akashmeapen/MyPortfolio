@@ -50,6 +50,20 @@
     --shadow-color: #ccff00;
 }
 
+[data-theme="milesmorales"] {
+    /* Theme 4: Miles Morales */
+    --bg: #0D0D0D;
+    --fg: #D61C2C;
+    --fg-invert: #2A2E30;
+    --primary: #D61C2C; /* Lime */
+    --secondary: #2A2E30; /* Pink */
+    --card-bg: #1e1e1e;
+    --card-fg: #f4f4f0;
+    --border-color: #f4f4f0;
+    --grid-color: rgba(255, 255, 255, 0.05);
+    --shadow-color: #D61C2C;
+}
+
 * {
     margin: 0;
     padding: 0;
