@@ -22,6 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
         currentThemeIndex = themes.indexOf(savedTheme);
     }
 
+    // Venom Glow Effect Function
+    const addVenomGlow = (e) => { e.target.style.boxShadow = 'var(--venom-glow)'; };
+    const removeVenomGlow = (e) => { e.target.style.boxShadow = ''; };
+
+    function manageVenomGlow(theme) {
+        const interactiveElements = document.querySelectorAll('.btn, .social-btn');
+        if (theme === 'milesmorales') {
+            interactiveElements.forEach(el => {
+                el.addEventListener('mouseenter', addVenomGlow);
+                el.addEventListener('mouseleave', removeVenomGlow);
+            });
+        } else {
+            interactiveElements.forEach(el => {
+                el.removeEventListener('mouseenter', addVenomGlow);
+                el.removeEventListener('mouseleave', removeVenomGlow);
+                el.style.boxShadow = ''; // Reset inline styles
+            });
+        }
+    }
+
+    // Apply initially based on loaded theme
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'coral';
+    manageVenomGlow(currentTheme);
+
     // Theme Toggle Handler
     if (themeBtn) {
         themeBtn.addEventListener('click', () => {
@@ -31,6 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
             
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('brutal-theme', newTheme);
+            
+            // Check and apply venom glow effect
+            manageVenomGlow(newTheme);
             
             // Re-render icons after slight style shift if needed
             setTimeout(() => {
