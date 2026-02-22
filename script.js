@@ -102,6 +102,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Active Link Scroll Spy
+    const sections = document.querySelectorAll('section[id], div[id="resume"]');
+    const navItems = document.querySelectorAll('.nav-links a, .mobile-nav a');
+
+    const spyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navItems.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { rootMargin: "-20% 0px -60% 0px", threshold: 0 });
+
+    sections.forEach(sec => spyObserver.observe(sec));
+
     // Simple Intersection Observer to add a pop-in effect on cards
     const observerOptions = {
         threshold: 0.1,
